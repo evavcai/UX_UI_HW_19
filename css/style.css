@@ -1,0 +1,299 @@
+body {
+    background-color: #EEEEEE;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+.flexChild p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    width: 80%;
+    padding-top: 2%;
+}
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 72px;
+    padding-left: 11%
+}
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+}
+h3 {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 42px
+}
+h4 {
+    font-family: "Ubuntu";
+    font-size: 28px;
+
+}
+.leftFoot p {
+    font-size: 14px;
+}
+
+/*nav section*/
+
+.nav {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    padding-top: 4%;
+    padding-bottom: 70px;
+}
+.logo {
+    width: 30%;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 2%;
+}
+.navButtons{
+    display: flex;
+    width: 40%;
+    justify-content: center;
+}
+a {
+    font-family: "Poppins";
+    padding-left: 5%;
+    cursor: pointer;
+}
+
+
+
+
+/*hero*/
+.hero {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    margin-left: 11%;
+}
+
+.intro {
+    width: 85%;
+    height: 
+}
+
+
+/*Projects*/
+
+.workGrid{
+    display: grid;
+    grid-template-rows: 450px 450px;
+    grid-template-columns: 2fr 2fr;
+    grid-template-areas: 
+    'MAMoverview MAMimage'
+    'DOEoverview DOEimage'
+    ;
+    margin-left: 11%;
+    margin-right: 11%;
+    align-items: center;
+}
+.MAMoverview {
+    grid-area: MAMoverview;
+}
+.DOEoverview {
+    grid-area: DOEoverview;
+}
+.MAMimage {
+    grid-area: MAMimage;
+    padding-top: 50px;
+}
+.DOEimage {
+    grid-area: DOEimage;
+    padding-top: 50px;
+}
+
+.MAMimage img {
+    max-width: 80%;
+}
+.DOEimage img {
+    max-width: 80%;
+}
+
+button {
+    text-align: center;
+    border: 2px solid black;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 500;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+}
+.line {
+    background-color: #718CD2;
+    height: 3px;
+    width: 20%;
+}
+
+/*About Me*/
+
+.content {
+    display: flex;
+    height: 50%;
+    margin-left: 11%;
+    margin-right: 8%;
+}
+
+.picture img {
+    max-width: 300%;
+    padding-top: 7%;
+}
+.myLife {
+    padding-left: 3%;
+    width: 55%;
+}
+.aboutMe button {
+    margin-left: 23%;
+}
+
+button {
+    font-weight: 500;
+    text-align: center;
+    border: 2px solid black;
+    font-family: 'Poppins', sans-serif; 
+    width: 175px;
+    height: 50px;
+    cursor: pointer;
+}
+
+/*Skills*/
+.flexContainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: flex-start;
+    padding: 8%;
+    margin-top: -5%;
+}
+
+.flexChild {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+
+.flexChild img {
+    max-width: 40%;
+}
+
+
+
+/*footer*/
+footer {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 15% 70% 10%;
+    grid-template-areas: 
+    "leftFoot icons rightFoot";
+    justify-content: space-evenly;
+    align-items: center;
+}
+.icons {
+    grid-area: icons;
+    text-align: center;
+}
+.rightFoot {
+    grid-area: rightFoot;
+
+}
+.leftFoot {
+    grid-area: leftFoot;
+    padding: 7%;
+}
+.icon {
+    padding: 5%;
+    width: 2.5%;
+    cursor: pointer
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .workGrid{
+        display: grid;
+        grid-template-rows: .5fr 1.5fr .5fr 1.5fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'MAMimage'
+        'MAMoverview'
+        'DOEimage'
+        'DOEoverview'
+        ;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .flexContainer {
+        flex-direction: column;
+        margin-top: 5%;
+        width: 100%;
+    }
+    .flexChild {
+        width: 100%;
+        align-items: space-evenly;
+
+    }
+    h1 {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 28px;
+    }
+    h2 {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 22px;
+    }
+    h3 {
+        font-family: 'Poppins';
+        font-weight: 400;
+        font-size: 18px
+    }
+    h4 {
+        font-family: "Ubuntu";
+        font-size: 18px;
+        margin-bottom: -5%;
+    }
+    p {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+    }
+    button {
+        font-weight: 500;
+        text-align: center;
+        border: 2px solid black;
+        font-family: 'Poppins', sans-serif; 
+        width: 130px;
+        height: 40px;
+        cursor: pointer;
+    }
+    .content {
+        display: inline-block;
+        width: 100%;
+    }
+    .MAMimage img {
+        max-width: 60%;
+        margin-bottom: -10%;
+    }
+    .DOEimage img {
+        max-width: 60%;
+        margin-bottom: -10%;
+    }
+    .picture img {
+        max-width: 60%;
+    }
+    .flexChild img {
+        max-width: 25%;
+    }
+    .line {
+        display: none;
+    }
+}
